@@ -1,0 +1,70 @@
+Microsoft (R) Macro Assembler Version 5.00                  2/21/24 07:46:07
+                                                             Page     1-1
+
+
+
+firstPro.asm(21): warning A4085: End of file, no END directive
+Open segments:
+_TEXT  . . . . . . . . . . . . .  	
+Microsoft (R) Macro Assembler Version 5.00                  2/21/24 07:46:07
+                                                             Page     1-1
+
+
+       1				dosseg 
+       2				.model small 
+       3 0100				.stack 100h 
+       4 0000				.data 
+       5 0000				.code 
+       6 0000				    main proc 
+       7				 
+       8 0000  B4 01			    mov ah,1 
+       9 0002  CD 21			    int 21h 
+      10				 
+      11 0004  8A D0			    mov dl,al 
+      12 0006  B4 02			    mov ah,2 
+      13 0008  CD 21			    int 21h 
+      14				 
+      15 000A  B4 4C			    mov ah,4ch 
+      16 000C  CD 21			    int 21h 
+      17				 
+      18				 
+      19 000E				    main endp 
+      20				main end 
+firstPro.asm(20): error A2105: Expected: instruction or directive
+      21				 
+firstPro.asm(21): warning A4085: End of file, no END directive
+Open segments:
+_TEXT  . . . . . . . . . . . . .  	
+Microsoft (R) Macro Assembler Version 5.00                  2/21/24 07:46:07
+                                                             Symbols-1
+
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+DGROUP . . . . . . . . . . . . .  	GROUP
+  _DATA  . . . . . . . . . . . .  	0000	WORD	PUBLIC	'DATA'
+  STACK  . . . . . . . . . . . .  	0100	PARA	STACK	'STACK'
+_TEXT  . . . . . . . . . . . . .  	0000	WORD	PUBLIC	'CODE'
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+MAIN . . . . . . . . . . . . . .  	N PROC	0000	_TEXT	Length = 000E
+
+@CODE  . . . . . . . . . . . . .  	TEXT  _TEXT		
+@CODESIZE  . . . . . . . . . . .  	TEXT  0		
+@DATASIZE  . . . . . . . . . . .  	TEXT  0		
+@FILENAME  . . . . . . . . . . .  	TEXT  firstPro		
+
+
+     20 Source  Lines
+     21 Total   Lines
+     15 Symbols
+
+  50664 + 465880 Bytes symbol space free
+
+      1 Warning Errors
+      3 Severe  Errors
